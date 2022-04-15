@@ -41,7 +41,7 @@ public class LookifyService {
 	}
 	
 	public List<Lookify> getByArtist(String search){
-		return lookifyRepository.findByArtist(search);
+		return lookifyRepository.findByArtistContaining(search);
 	}
 	
 	public List<Lookify> getByRating(){
